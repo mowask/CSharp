@@ -10,12 +10,14 @@ namespace Dictionary
 {
     internal class Program
     {
-        private static Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
-        private const string dictionaryFilePath = "dictionary.txt";
+        //private static Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
+        //private const string dictionaryFilePath = "dictionary.txt";
 
         static void Main(string[] args)
         {
-            LoadDictionary();
+            Dictionary englishRussian = new Dictionary("dictionary.txt");
+
+            englishRussian.LoadDictionary();
 
 
             //foreach (string key in dictionary.Keys)
@@ -32,29 +34,29 @@ namespace Dictionary
                 Console.WriteLine("2. Добавить слово и перевод");
                 Console.WriteLine("3. Заменить слово или перевод");
                 Console.WriteLine("4. Удалить слово");
-                Console.WriteLine("5. Экспортировать словарь в файл");
+                Console.WriteLine("5. Экспортировать слово в файл");
                 Console.WriteLine("6. Выйти");
                 Console.Write("Выберите пункт меню: ");
 
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        FindTranslation();
+                        englishRussian.FindTranslation();
                         break;
                     case "2":
-                        AddWord();
+                        englishRussian.AddWord();
                         break;
                     case "3":
-                        ReplaceWordOrTranslation();
+                        englishRussian.ReplaceWordOrTranslation();
                         break;
                     case "4":
-                        DeleteWord();
+                        englishRussian.DeleteWord();
                         break;
                     case "5":
-                        ExportDictionary();
+                        
                         break;
                     case "6":
-                        SaveDictionary();
+                        englishRussian.SaveDictionary();
                         return;
                     default:
                         Console.WriteLine("Неверный выбор. Попробуйте снова.");
@@ -65,116 +67,102 @@ namespace Dictionary
             }
         }
 
-        private static void LoadDictionary()
-        {
-            if (File.Exists(dictionaryFilePath))
-            {
-                string[] lines = File.ReadAllLines(dictionaryFilePath);
-                foreach (var line in lines)
-                {
-                    var parts = line.Split(':');
-                    if (parts.Length == 2)
-                    {
-                        var word = parts[0];
-                        var translations = parts[1].Split(',');
-                        dictionary[word] = new List<string>(translations);
-                    }
-                }
-            }
-        }
+        //private static void LoadDictionary()
+        //{
+        //    if (File.Exists(dictionaryFilePath))
+        //    {
+        //        string[] lines = File.ReadAllLines(dictionaryFilePath);
+        //        foreach (var line in lines)
+        //        {
+        //            var parts = line.Split(':');
+        //            if (parts.Length == 2)
+        //            {
+        //                var word = parts[0];
+        //                var translations = parts[1].Split(',');
+        //                dictionary[word] = new List<string>(translations);
+        //            }
+        //        }
+        //    }
+        //}
 
-        private static void SaveDictionary()
-        {
-            List<string> lines = new List<string>();
-            foreach (var item in dictionary)
-            {
-                lines.Add($"{item.Key}:{string.Join(",", item.Value)}");
-            }
-            File.WriteAllLines(dictionaryFilePath, lines);
-        }
+        //private static void SaveDictionary()
+        //{
+        //    List<string> lines = new List<string>();
+        //    foreach (var item in dictionary)
+        //    {
+        //        lines.Add($"{item.Key}:{string.Join(",", item.Value)}");
+        //    }
+        //    File.WriteAllLines(dictionaryFilePath, lines);
+        //}
 
-        private static void FindTranslation()
-        {
-            Console.Write("Введите слово для поиска: ");
-            var word = Console.ReadLine();
-            if (dictionary.ContainsKey(word))
-            {
-                Console.WriteLine("Переводы:");
-                foreach (var translation in dictionary[word])
-                {
-                    Console.WriteLine($"- {translation}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Слово не найдено.");
-            }
-        }
+        //private static void FindTranslation()
+        //{
+        //    Console.Write("Введите слово для поиска: ");
+        //    var word = Console.ReadLine();
+        //    if (dictionary.ContainsKey(word))
+        //    {
+        //        Console.WriteLine("Переводы:");
+        //        foreach (var translation in dictionary[word])
+        //        {
+        //            Console.WriteLine($"- {translation}");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Слово не найдено.");
+        //    }
+        //}
 
-        private static void AddWord()
-        {
-            Console.Write("Введите слово: ");
-            var word = Console.ReadLine();
-            Console.Write("Введите перевод (через запятую): ");
-            var translations = Console.ReadLine().Split(',');
+        //private static void AddWord()
+        //{
+        //    Console.Write("Введите слово: ");
+        //    var word = Console.ReadLine();
+        //    Console.Write("Введите перевод (через запятую): ");
+        //    var translations = Console.ReadLine().Split(',');
 
-            if (!dictionary.ContainsKey(word))
-            {
-                dictionary[word] = new List<string>(translations);
-            }
-            else
-            {
-                dictionary[word].AddRange(translations);
-            }
-        }
+        //    if (!dictionary.ContainsKey(word))
+        //    {
+        //        dictionary[word] = new List<string>(translations);
+        //    }
+        //    else
+        //    {
+        //        dictionary[word].AddRange(translations);
+        //    }
+        //}
 
-        private static void ReplaceWordOrTranslation()
-        {
-            Console.Write("Введите слово для замены: ");
-            var word = Console.ReadLine();
+        //private static void ReplaceWordOrTranslation()
+        //{
+        //    Console.Write("Введите слово для замены: ");
+        //    var word = Console.ReadLine();
 
-            if (dictionary.ContainsKey(word))
-            {
-                Console.Write("Введите новый перевод (через запятую): ");
-                var translations = Console.ReadLine().Split(',');
-                dictionary[word] = new List<string>(translations);
-            }
-            else
-            {
-                Console.WriteLine("Слово не найдено.");
-            }
-        }
+        //    if (dictionary.ContainsKey(word))
+        //    {
+        //        Console.Write("Введите новый перевод (через запятую): ");
+        //        var translations = Console.ReadLine().Split(',');
+        //        dictionary[word] = new List<string>(translations);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Слово не найдено.");
+        //    }
+        //}
 
-        private static void DeleteWord()
-        {
-            Console.Write("Введите слово для удаления: ");
-            var word = Console.ReadLine();
+        //private static void DeleteWord()
+        //{
+        //    Console.Write("Введите слово для удаления: ");
+        //    var word = Console.ReadLine();
 
-            if (dictionary.ContainsKey(word))
-            {
-                dictionary.Remove(word);
-                Console.WriteLine("Слово удалено.");
-            }
-            else
-            {
-                Console.WriteLine("Слово не найдено.");
-            }
-        }
+        //    if (dictionary.ContainsKey(word))
+        //    {
+        //        dictionary.Remove(word);
+        //        Console.WriteLine("Слово удалено.");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Слово не найдено.");
+        //    }
+        //}
 
-        private static void ExportDictionary()
-        {
-            Console.Write("Введите имя файла для экспорта: ");
-            var exportPath = Console.ReadLine();
-            File.WriteAllLines(exportPath, CreateExportContent());
-            Console.WriteLine("Словарь экспортирован.");
-        }
-
-        private static IEnumerable<string> CreateExportContent()
-        {
-            foreach (var item in dictionary)
-            {
-                yield return $"{item.Key} {string.Join(",", item.Value)}";
-            }
-        }
+       
     }
 }
