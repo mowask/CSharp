@@ -1,0 +1,59 @@
+﻿<Window x:Class="Wpf_L1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_L1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="585" Width="875">
+    <Grid >
+        <Button            
+            x:Name="myButton"    
+            FontSize="30"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Center" 
+            >
+            My Button
+        </Button>
+        <Button
+            x:Name="myButton2"
+            FontSize="30"
+            VerticalAlignment="Bottom" 
+            HorizontalAlignment="Center"  
+            FontWeight="Bold" 
+            Content = "Reset">
+        </Button>
+        <Button
+            x:Name="myButton3"
+            FontSize="30"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Left" 
+            >
+            My Button3
+        </Button>
+        <Button 
+            x:Name="myButton4"
+            FontSize="30"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Right"
+            Width = "100"
+            Height="200"
+            >            
+            <WrapPanel>
+                <TextBlock Foreground="Red">Multi</TextBlock>
+                <TextBlock Foreground="Blue">Color</TextBlock>
+                <TextBlock>Text</TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <TextBlock 
+            x:Name="myTextBlock"
+            FontSize= "72" 
+            Foreground= "DarkRed" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center">    
+                Hello World!
+        </TextBlock>
+
+    </Grid>
+</Window>
