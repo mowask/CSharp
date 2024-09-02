@@ -32,22 +32,23 @@ namespace Wpf_hw_1
         }        
 
         private void ButtonClick(object sender, RoutedEventArgs e)
-        {
-            while (true)
+        {            
             {                
                 int guessNumber = random.Next(1, 11);
                 MessageBoxResult result = MessageBox.Show($"Ваше число {random.Next()}?", "My Title",
                     MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                if (result == MessageBoxResult.Yes)
+                while (result != MessageBoxResult.Yes)
                 {
-                    myTextBlock.Text = $"Угадал с {count} попытки! Ваше число {random.Next()}";
-                    count = 1;
-                }
-                else
-                {
-                    numbers.Add(random);
-                    count++;
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        myTextBlock.Text = $"Угадал с {count} попытки! Ваше число {random.Next()}";
+                        count = 1;
+                    }
+                    else
+                    {
+                        numbers.Add(random);
+                        count++;
+                    }
                 }
             }
         }
