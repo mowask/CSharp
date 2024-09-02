@@ -22,7 +22,7 @@ namespace Wpf_hw_1
     {
         private int count = 1;
         Random random = new Random();
-        List<Random> numbers = new List<Random>();
+        List<int> numbers = new List<int>();
 
         public MainWindow()
         {
@@ -35,18 +35,18 @@ namespace Wpf_hw_1
         {            
             {                
                 int guessNumber = random.Next(1, 11);
-                MessageBoxResult result = MessageBox.Show($"Ваше число {random.Next()}?", "My Title",
+                MessageBoxResult result = MessageBox.Show($"Ваше число {guessNumber}?", "My Title",
                     MessageBoxButton.YesNo, MessageBoxImage.Question);
                 while (result != MessageBoxResult.Yes)
                 {
                     if (result == MessageBoxResult.Yes)
                     {
-                        myTextBlock.Text = $"Угадал с {count} попытки! Ваше число {random.Next()}";
+                        myTextBlock.Text = $"Угадал с {count} попытки! Ваше число {guessNumber}";
                         count = 1;
                     }
                     else
                     {
-                        numbers.Add(random);
+                        numbers.Add(guessNumber);
                         count++;
                     }
                 }
