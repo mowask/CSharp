@@ -1,0 +1,58 @@
+﻿<Window x:Class="Wpf_L2_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_L2_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid>
+        <RepeatButton
+            x:Name="GrowButton"
+            Margin="10 10 0 0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Delay="500"
+            Interval="100">
+            Grow
+        </RepeatButton>
+        
+        <RepeatButton
+            x:Name="ShrinkButton"
+            Margin="100 10 0 0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Delay="1000"
+            Interval="400">
+            Shrink
+        </RepeatButton>
+        
+        <RepeatButton
+            x:Name="GrowHeightButton"
+            Margin="0 10 10 0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Delay="500"
+            Interval="100">
+            Grow Height
+        </RepeatButton>
+        
+        <RepeatButton
+            x:Name="ShrinkHeightButton"
+            Margin="10 10 100 10"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Delay="1000"
+            Interval="100">
+            Shrink Height
+        </RepeatButton>
+
+        <Rectangle 
+            x:Name="Rect" 
+            Height="100" Width="100" 
+            Fill="Orange"
+            >            
+        </Rectangle>     
+        
+    </Grid>
+</Window>
