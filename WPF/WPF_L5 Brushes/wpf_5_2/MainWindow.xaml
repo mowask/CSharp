@@ -1,0 +1,232 @@
+﻿<Window x:Class="Wpf_L5_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_L5_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="600">
+    <Grid x:Name="grid">
+        <ScrollViewer>
+            <Grid x:Name="grid1">
+        <!--<Button Background="Green" FontSize="25" Foreground="#ffAC77FE"
+                Height="48" Width="150"> OK</Button>-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Width="150" Height="100" Margin="5" FontSize="28">            
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>                    
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.Text>
+                градиент
+            </TextBlock.Text>
+        </TextBlock>
+
+        <TextBlock TextWrapping="Wrap" Height="100" Margin="5" FontSize="28"
+                   Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Линейный градиент по диагонали
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+
+        <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                градиент 
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Значение Offset = 0.5
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+        <TextBlock Width="150" Height="100" Margin="5" FontSize="28"
+                   Grid.Row="2" VerticalAlignment="Center">
+            <TextBlock.Text>
+                градиент 
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                горизонтальный градиент
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Width="150" Height="100" Margin="5" FontSize="28"
+                   Grid.Row="3" VerticalAlignment="Center">
+            <TextBlock.Text>
+                градиент 
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Вертикальный градиент
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.3"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Width="150" Height="100" Margin="5" FontSize="28"
+                   Grid.Row="4" VerticalAlignment="Center">
+            <TextBlock.Text>
+                градиент 
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="4" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Pad
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.5"
+                                     SpreadMethod="Pad">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Reflect
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.5"
+                                     SpreadMethod="Reflect">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        
+         <TextBlock Height="100" Margin="5" FontSize="28"
+                   Grid.Row="6" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock.Text>
+                Repeat
+            </TextBlock.Text>
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.5"
+                                     SpreadMethod="Repeat">
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+                
+         
+                <TextBox Margin="5" FontWeight ="Bold" FontSize="65" 
+                         Grid.Row="7" Grid.Column="1"
+                     TextWrapping="Wrap">
+                    <TextBox.Text> Hello World!!!</TextBox.Text>
+                    <TextBox.Foreground>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="Green" Offset="0.0"/>
+                            <GradientStop Color="Purple" Offset="0.025"/>
+                            <GradientStop Color="Blue" Offset="0.75"/>
+                            <GradientStop Color="Tomato" Offset="1.0"/>                            
+                        </LinearGradientBrush>
+                    </TextBox.Foreground>
+                </TextBox>
+
+
+                <TextBlock  Height="100" Margin="5" FontSize="28"
+                   Grid.Row="8" Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock.Text>
+                        градиент
+                    </TextBlock.Text>
+                    <TextBlock.Background>
+                        <RadialGradientBrush RadiusX="0.5" RadiusY="0.5" 
+                                             GradientOrigin="0.7, 0.3">
+                            <GradientStop Color="Green" Offset="0"/>
+                            <GradientStop Color="Yellow" Offset="1"/>
+                        </RadialGradientBrush>
+                    </TextBlock.Background>
+                </TextBlock>
+
+                <Button Grid.Row="9" Grid.Column ="1"
+                    Content="OK" FontSize="25" Foreground="Gray"
+                        Height="86" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images/kot.png" 
+                                    Stretch="UniformToFill"></ImageBrush>
+                    </Button.Background>
+                </Button>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
