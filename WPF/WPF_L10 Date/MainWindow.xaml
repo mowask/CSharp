@@ -1,0 +1,99 @@
+﻿<Window x:Class="Wpf_L10_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_L10_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <!--<Grid>
+        <StackPanel>
+            <Grid VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>           
+        </Grid.ColumnDefinitions>
+        <Calendar Background="LightSlateGray" SelectionMode="MultipleRange" 
+                  DisplayMode="Month" Grid.Column="0"/>
+        <Calendar Background="LightSlateGray" SelectionMode="MultipleRange" 
+                          DisplayMode="Year" Grid.Column="1"/>
+        <Calendar Background="LightSlateGray" SelectionMode="MultipleRange" 
+                          DisplayMode="Decade" Grid.Column="2"/>
+
+
+             </Grid>
+        </StackPanel>
+    </Grid>-->
+
+    <Grid>
+        <StackPanel>
+            <Grid VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>               
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Calendar x:Name="calendarAppointment" Grid.RowSpan="2" Background="Gray"/>
+
+                <TextBox x:Name="textBoxAppointment" Grid.Column="1" 
+                         Padding="5" TextWrapping="Wrap" Height="100"/>
+
+                <Button x:Name="buttonSubmit" 
+                        Grid.Row="1" Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Content="Add Appointment"/>
+
+            </Grid>
+
+            <ListBox x:Name="appointmentListBox">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <WrapPanel.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Click="MenuItem_Click"
+                                        Header="Delete"
+                                              Tag="{Binding ID}"/>
+                                </ContextMenu>
+                            </WrapPanel.ContextMenu>
+                            <TextBlock Text="{Binding ID}" Margin="0 0 10 0"/>
+                            <TextBlock Text="{Binding Date}"
+                                       FontWeight="Bold"
+                                       Margin="0 0 10 0"/>
+                            <TextBlock Text="{Binding Description}"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Grid>
+                <DatePicker x:Name="datePicker"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Height="25"
+                            Width="200"/>
+
+                <Button x:Name="btnSubmit"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="220 10 0 0"
+                        Width="75"
+                        Content="Submit"/>
+                
+                <TextBlock x:Name="resultTextBlock"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           TextWrapping="Wrap"
+                           Margin="10 50 0 0"/>
+            </Grid>
+            
+        </StackPanel>
+    </Grid>
+</Window>
