@@ -8,6 +8,8 @@
         Title="MainWindow" Height="600" Width="500">
     <Grid>
         <DockPanel>
+            
+            <!--Menu-->
             <Menu DockPanel.Dock="Top" Background="BurlyWood">
                 <MenuItem Header="File">
                     <MenuItem Header="New" x:Name="menuItemNew"/>
@@ -25,7 +27,8 @@
                     <MenuItem Header="Undo" Command="Undo"/>
                 </MenuItem>
                 <MenuItem Header="Insert"/>
-                <MenuItem Header="Design"/>
+                <MenuItem x:Name="btnDesign"
+                    Header="Design"/>
 
                 <TextBox x:Name="textBoxFontSize" 
                          Width="40"
@@ -33,8 +36,53 @@
                          Path=FontSize, 
                          UpdateSourceTrigger=PropertyChanged}">                  
                 </TextBox>
+
+                <ComboBox x:Name="comboBox" Width="50" ToolTip="Color">
+                    <ComboBoxItem> Red </ComboBoxItem>
+                    <ComboBoxItem> Green </ComboBoxItem>
+                    <ComboBoxItem> Blue </ComboBoxItem>
+                </ComboBox>
             </Menu>
 
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button x:Name="btnCut" Height="25">
+                        <Image Source="Icons/Cut.png"/>
+                    </Button>
+                    <Button x:Name="btnCopy" Height="25">
+                        <Image Source="Icons/Copy.png"/>
+                    </Button>
+                    <Button x:Name="btnPaste" Height="25">
+                        <Image Source="Icons/Paste.png"/>
+                    </Button>                    
+                </ToolBar>
+
+                <ToolBar>
+                    <Button x:Name="btnLeft" Height="25">
+                        <Image Source="Icons/AlignLeft.png"/>
+                    </Button>
+                     <Button x:Name="btnCenter" Height="25">
+                        <Image Source="Icons/AlignCenter.png"/>
+                    </Button>
+                     <Button x:Name="btnRigt" Height="25">
+                        <Image Source="Icons/AlignRight.png"/>
+                    </Button>
+                    
+                </ToolBar>
+            </ToolBarTray>
+            
+            <!--ToolBar--><!--
+                <ToolBar DockPanel.Dock="Top">
+                    <Button>Save</Button>
+                    <Button>Save As</Button>
+                    <Button>Open...</Button>
+                    <Separator/>
+                    <Button>Cut</Button>
+                    <Button>Copy</Button>
+                    <Button>Paste</Button>
+                </ToolBar>-->
+            
+            <!--StatusBar-->
             <StatusBar DockPanel.Dock="Bottom" Background="Coral">
                 <StatusBarItem>
                     <TextBlock x:Name="textBlockLines" Text="Ln 0"/>
