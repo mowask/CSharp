@@ -1,0 +1,59 @@
+﻿<Window x:Class="wpf_hw_Quiz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_hw_Quiz"
+        mc:Ignorable="d"
+        x:Name="window"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <DockPanel>
+            <Grid DockPanel.Dock="Top">
+                <TextBlock HorizontalAlignment="Left"
+                           Text="{Binding CountCurrent}"
+                           FontSize="18"
+                           FontWeight="DemiBold"
+                           Margin="10"/>
+                <TextBlock HorizontalAlignment="Right"
+                           Text="{Binding CurrentQuiz.Name}"
+                           FontSize="18"
+                           FontWeight="DemiBold"
+                           Margin="10"/>
+            </Grid>
+            <DockPanel DockPanel.Dock="Bottom">
+                <Button DockPanel.Dock="Right"
+                        Content="Next"
+                        Width="100"
+                        Command="{Binding NextQuestion}"
+                        Margin="20"
+                        FontSize="18"
+                        FontWeight="DemiBold"
+                        BorderBrush="Gray"
+                        BorderThickness="5"
+                        Background="PeachPuff"/>
+            </DockPanel>
+            <StackPanel>
+                <TextBlock Text="{Binding CurrentQuestion.Text}"
+                           HorizontalAlignment="Center"
+                           FontSize="18"
+                           FontWeight="DemiBold"/>
+                <ListBox ItemsSource="{Binding CurrentQuestion.Answers}"
+                         HorizontalAlignment="Center"
+                         Margin="10">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Button Content="{Binding Text}"
+                                    Background="{Binding Color}"
+                                    Command="{Binding ElementName=window,
+                                                      Path=DataContext.SelectedAnswer}"
+                                    CommandParameter="{Binding}"
+                                    FontSize="18"
+                                    />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
