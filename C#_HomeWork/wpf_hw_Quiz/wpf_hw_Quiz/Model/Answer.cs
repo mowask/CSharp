@@ -23,9 +23,9 @@ namespace wpf_hw_Quiz.Model
         public void SetColor(bool isSelected)
         {
             if (isSelected)
-                Color = new SolidColorBrush(Colors.PeachPuff);
+                Color = new SolidColorBrush(Colors.Yellow);
             else
-                Color = new SolidColorBrush(Colors.Gray);
+                Color = new SolidColorBrush(Colors.LightGray);
         }
     }
 }

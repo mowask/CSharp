@@ -1,0 +1,6 @@
+Quiz Name Capitals
+1|What is the capital of France?|Berlin,Paris,Rome|0,1,0
+2|What is the capital of Russia?|Paris,Rome, Moscow|0,0,1
+3|What is the capital of Japan?|Rome, Toronto, Tokio|0,0,1
+4|What is the capital of German?|Rome, Berlin, Tokio|0,1,0
+5|What is the capital of Italy?|Rome, Toronto, Paris|1,0,0

@@ -51,7 +51,7 @@ namespace wpf_hw_Quiz.ViewModel
 
         public QuizViewModel()
         {
-            CurrentQuiz = Quiz.GenerateQuiz();
+            CurrentQuiz = Quiz.LoadQuiz("questions.txt");
             CurrentQuestion = CurrentQuiz.Questions[0];
             CountCurrent = 1;
             CountCorrect = 0;
@@ -79,7 +79,10 @@ namespace wpf_hw_Quiz.ViewModel
         }
         public void NextQuestionHandler(Object obj)
         {
-            if (CountCurrent >= 10)
+            if (CurrentAnswer.IsCorrect)
+                CountCorrect++;
+
+            if (CountCurrent >= 5)
             {
                 MessageBox.Show($"Your result is: {CountCorrect}", "Congrats!", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
@@ -89,10 +92,7 @@ namespace wpf_hw_Quiz.ViewModel
             {
                 MessageBox.Show("CurrentAnswer == null", "ERROR", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
-            }
-
-            if (CurrentAnswer.IsCorrect)
-                CountCorrect++;
+            }           
 
             CountCurrent++;
             CurrentQuestion = CurrentQuiz.Questions[CountCurrent - 1];

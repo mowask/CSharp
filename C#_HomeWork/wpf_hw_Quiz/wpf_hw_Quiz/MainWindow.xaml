@@ -8,36 +8,22 @@
         x:Name="window"
         Title="MainWindow" Height="450" Width="400">
     <Grid>
-        <DockPanel>
-            <Grid DockPanel.Dock="Top">
+        <StackPanel>
+            <DockPanel DockPanel.Dock="Top">
                 <TextBlock HorizontalAlignment="Left"
                            Text="{Binding CountCurrent}"
-                           FontSize="18"
-                           FontWeight="DemiBold"
+                           FontSize="20"                           
                            Margin="10"/>
                 <TextBlock HorizontalAlignment="Right"
                            Text="{Binding CurrentQuiz.Name}"
-                           FontSize="18"
-                           FontWeight="DemiBold"
+                           FontSize="20"                           
                            Margin="10"/>
-            </Grid>
-            <DockPanel DockPanel.Dock="Bottom">
-                <Button DockPanel.Dock="Right"
-                        Content="Next"
-                        Width="100"
-                        Command="{Binding NextQuestion}"
-                        Margin="20"
-                        FontSize="18"
-                        FontWeight="DemiBold"
-                        BorderBrush="Gray"
-                        BorderThickness="5"
-                        Background="PeachPuff"/>
             </DockPanel>
+            
             <StackPanel>
                 <TextBlock Text="{Binding CurrentQuestion.Text}"
                            HorizontalAlignment="Center"
-                           FontSize="18"
-                           FontWeight="DemiBold"/>
+                           FontSize="16"/>
                 <ListBox ItemsSource="{Binding CurrentQuestion.Answers}"
                          HorizontalAlignment="Center"
                          Margin="10">
@@ -48,12 +34,23 @@
                                     Command="{Binding ElementName=window,
                                                       Path=DataContext.SelectedAnswer}"
                                     CommandParameter="{Binding}"
-                                    FontSize="18"
+                                    FontSize="20"
                                     />
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-        </DockPanel>
+
+            <DockPanel DockPanel.Dock="Bottom">
+                <Button HorizontalAlignment="Right"
+            Content="Next"
+            Width="100"
+            Command="{Binding NextQuestion}"
+            Margin="10"
+            FontSize="20" 
+            Background="LightSkyBlue"/>
+            </DockPanel>
+            
+        </StackPanel>
     </Grid>
 </Window>
