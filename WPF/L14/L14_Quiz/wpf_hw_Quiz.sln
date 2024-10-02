@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf_hw_Quiz", "wpf_hw_Quiz\wpf_hw_Quiz.csproj", "{3CFF00E9-572C-4D3D-BD84-E4EAA2AD6D56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CFF00E9-572C-4D3D-BD84-E4EAA2AD6D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFF00E9-572C-4D3D-BD84-E4EAA2AD6D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFF00E9-572C-4D3D-BD84-E4EAA2AD6D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFF00E9-572C-4D3D-BD84-E4EAA2AD6D56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC258F94-7B00-4BE9-A724-D6C44568D8EB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.AssemblyReference.cache
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.g.cs
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\App.g.cs
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.cache
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.lref
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe.config
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.pdb
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.baml
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.g.resources
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.Properties.Resources.resources
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.GenerateResource.cache
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.CoreCompileInputs.cache
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.exe
+D:\Visual Studio\C#\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.pdb
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe.config
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.pdb
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.AssemblyReference.cache
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.g.cs
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\App.g.cs
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.cache
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.lref
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.baml
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.g.resources
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.Properties.Resources.resources
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.GenerateResource.cache
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.CoreCompileInputs.cache
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.exe
+E:\TOP\С#\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.pdb
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe.config
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.exe
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\bin\Debug\wpf_hw_Quiz.pdb
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.AssemblyReference.cache
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\Login.g.cs
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.g.cs
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\App.g.cs
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.cache
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz_MarkupCompile.lref
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\Login.baml
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\MainWindow.baml
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.g.resources
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.Properties.Resources.resources
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.GenerateResource.cache
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.csproj.CoreCompileInputs.cache
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.exe
+C:\Users\студент.TOP\source\repos\mowask\CSharp\C#_HomeWork\wpf_hw_Quiz\wpf_hw_Quiz\obj\Debug\wpf_hw_Quiz.pdb
