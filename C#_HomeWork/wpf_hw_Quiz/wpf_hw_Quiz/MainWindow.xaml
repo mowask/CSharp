@@ -14,10 +14,15 @@
                            Text="{Binding CountCurrent}"
                            FontSize="20"                           
                            Margin="10"/>
+                <TextBlock HorizontalAlignment="Center"
+                           Text="{Binding CurrentUser.Login}"
+                           FontSize="20"                           
+                           Margin="10"/>
                 <TextBlock HorizontalAlignment="Right"
                            Text="{Binding CurrentQuiz.Name}"
                            FontSize="20"                           
                            Margin="10"/>
+                
             </DockPanel>
             
             <StackPanel>
@@ -42,13 +47,22 @@
             </StackPanel>
 
             <DockPanel DockPanel.Dock="Bottom">
+                <Button HorizontalAlignment="Left"
+                        Content="Logout"
+                        Width="100"
+                        Command="{Binding LogoutCommand}"
+                        Margin="10"
+                        FontSize="20" 
+                        Background="LightSkyBlue"/> 
+                
                 <Button HorizontalAlignment="Right"
-            Content="Next"
-            Width="100"
-            Command="{Binding NextQuestion}"
-            Margin="10"
-            FontSize="20" 
-            Background="LightSkyBlue"/>
+                        Content="Next"
+                        Width="100"
+                        Command="{Binding NextQuestion}"
+                        Margin="10"
+                        FontSize="20" 
+                        Background="LightSkyBlue"/>                
+                
             </DockPanel>
             
         </StackPanel>

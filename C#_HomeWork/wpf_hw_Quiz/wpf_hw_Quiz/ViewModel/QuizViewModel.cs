@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
+using System.Windows.Input; 
 using System.Windows;
 using wpf_hw_Quiz.Model;
 
@@ -12,6 +12,9 @@ namespace wpf_hw_Quiz.ViewModel
 {
     public class QuizViewModel : INotifyPropertyChanged
     {
+        private Window _window {  get; set; }
+        public User CurrentUser { get; private set; }
+
         public Quiz CurrentQuiz { get; set; }
         public Answer CurrentAnswer { get; set; }
 
@@ -48,8 +51,10 @@ namespace wpf_hw_Quiz.ViewModel
 
         public ICommand SelectedAnswer { get; set; }
         public ICommand NextQuestion { get; set; }
+        public ICommand LogoutCommand {  get; set; }
 
-        public QuizViewModel()
+       
+        public QuizViewModel(Window window, User currentUser)
         {
             CurrentQuiz = Quiz.LoadQuiz("questions.txt");
             CurrentQuestion = CurrentQuiz.Questions[0];
@@ -58,7 +63,20 @@ namespace wpf_hw_Quiz.ViewModel
 
             SelectedAnswer = new DelegateCommand(SelectedAnswerHandler);
             NextQuestion = new DelegateCommand(NextQuestionHandler);
+            LogoutCommand = new DelegateCommand(LoguotHandler);
+            CurrentUser = currentUser;
+            _window = window;
         }
+
+        public void LoguotHandler(object obj)
+        {
+            var loginWindow = new Login();
+            loginWindow.Show();
+
+            _window.Close();
+        }
+
+
         public void SelectedAnswerHandler(Object obj)
         {
             if (obj is Answer)
@@ -98,7 +116,8 @@ namespace wpf_hw_Quiz.ViewModel
             CurrentQuestion = CurrentQuiz.Questions[CountCurrent - 1];
 
             CurrentAnswer = null;
-        }
+        }        
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string propertyName)

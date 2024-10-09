@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using wpf_hw_Quiz.Model;
 using wpf_hw_Quiz.ViewModel;
 
 namespace wpf_hw_Quiz
@@ -21,10 +22,12 @@ namespace wpf_hw_Quiz
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(User user)
         {
             InitializeComponent();
-            this.DataContext = new QuizViewModel();
+            this.DataContext = new QuizViewModel(this, user);
         }
+
+
     }
 }
