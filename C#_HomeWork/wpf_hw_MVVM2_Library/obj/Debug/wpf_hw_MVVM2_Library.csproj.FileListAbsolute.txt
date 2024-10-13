@@ -1,0 +1,15 @@
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.csproj.AssemblyReference.cache
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\MainWindow.g.cs
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\App.g.cs
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library_MarkupCompile.cache
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library_MarkupCompile.lref
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\bin\Debug\wpf_hw_MVVM2_Library.exe.config
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\bin\Debug\wpf_hw_MVVM2_Library.exe
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\bin\Debug\wpf_hw_MVVM2_Library.pdb
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\MainWindow.baml
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.g.resources
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.Properties.Resources.resources
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.csproj.GenerateResource.cache
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.csproj.CoreCompileInputs.cache
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.exe
+e:\TOP\С#\C#_HomeWork\wpf_hw_MVVM2_Library\obj\Debug\wpf_hw_MVVM2_Library.pdb
