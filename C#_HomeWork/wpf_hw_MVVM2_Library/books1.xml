@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Books>
+  <Book>
+    <Title>The Hobbit</Title>
+    <Author>J.R.R. Tolkien</Author>
+    <Year>1937</Year>
+    <Genre>Fantasy</Genre>
+    <Description>The Hobbit is set in Middle-earth and follows home-loving Bilbo Baggins the hobbit of the title, who joins the wizard Gandalf and the thirteen dwarves of Thorin's Company, on a quest to reclaim the dwarves' home and treasure from the dragon Smaug </Description>
+  </Book>
+  <Book>
+    <Title>Lord of the Flies</Title>
+    <Author>William Golding</Author>
+    <Year>1954</Year>
+    <Genre>Novel</Genre>
+    <Description>The novel tells the story of a group of British schoolchildren who find themselves on a desert island after a plane crash. At first, the children try to establish order and organize a fair life on the island, but over time, disagreements and real, adult conflicts arise among them.</Description>
+  </Book>
+  <Book>
+    <Title>Romeo and Juliet</Title>
+    <Author>William Shakespeare</Author>
+    <Year>1561</Year>
+    <Genre>Tragedy</Genre>
+    <Description>he book about a deep love that flares up between two young people from feuding families – the Montagues and the Capulets.</Description>
+  </Book>
+  <Book>
+    <Title>Faust</Title>
+    <Author>Goethe</Author>
+    <Year>1876</Year>
+    <Genre>Drama</Genre>
+    <Description>The Hobbit is set in Middle-earth and follows home-loving Bilbo Baggins...</Description>
+  </Book>
+  <Book>
+    <Title>The Hobbit</Title>
+    <Author>J.R.R. Tolkien</Author>
+    <Year>1937</Year>
+    <Genre>Fantasy</Genre>
+    <Description>This book tells the story of the life and fall of a man who makes a deal with a demon. But will the evil spirit Mephistopheles succeed in dragging the disillusioned soul underground, or will her inner light prove stronger?</Description>
+  </Book>
+</Books>
