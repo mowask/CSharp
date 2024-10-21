@@ -1,0 +1,21 @@
+--CREATE Table Achievements(
+--	Id INT PRIMARY KEY IDENTITY(1,1),
+--	StudentId INT FOREIGN KEY REFERENCES Students(Id),
+--	SubjectId INT FOREIGN KEY REFERENCES Subjects(Id),
+--	Assesment INT CHECK (Assesment LIKE '[1-12]')
+--	);
+	
+--USE Univresity
+
+--INSERT INTO Achievements VALUES
+--(6,1,12),
+--(6,2,11),
+--(6,3,10),
+--(6,3,12),
+--(10,1,11),
+--(10,5,10),
+--(8,1,9),
+--(8,4,12),
+--(9,3,12),
+--(9,4,9),
+--(9,5,10);
