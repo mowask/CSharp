@@ -1,0 +1,12 @@
+--CREATE DATABASE Football
+--GO
+
+--USE Football
+--GO
+
+--CREATE TABLE Teams( TeamID INT IDENTITY(1,1) PRIMARY KEY,
+--					TeamName NVARCHAR(50) NOT NULL UNIQUE	 );
+
+--CREATE TABLE Players( PlayerID INT IDENTITY(1,1) PRIMARY KEY,
+--					PlayerName NVARCHAR(50) NOT NULL, 
+--					TeamID INT FOREIGN KEY REFERENCES Teams(TeamID)		);
