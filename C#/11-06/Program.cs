@@ -9,6 +9,7 @@ using System.Data;
 using System.Data.SqlClient;
 using ConsoleApp1;
 using System.Linq.Expressions;
+using System.Configuration;
 
 namespace _04_11
 {
@@ -19,11 +20,15 @@ namespace _04_11
             SqlConnection conn = null;
             try
             {
-                conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;
-                                        Initial Catalog = Library;
-                                        Integrated Security = True;
-                                        Connect Timeout = 30;
-                                        Encrypt = False;");
+                //conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;
+                //                        Initial Catalog = Library;
+                //                        Integrated Security = True;
+                //                        Connect Timeout = 30;
+                //                        Encrypt = False;");
+
+
+                string ConnectionString = ConfigurationManager.ConnectionStrings["MyConnString"].ConnectionString;
+                conn = new SqlConnection(ConnectionString);
 
                 conn.Open();
                 if (conn.State == ConnectionState.Open)
@@ -42,11 +47,19 @@ namespace _04_11
                 var allAuthors = authorsRepository.GetAll();
                 //Console.WriteLine(allAuthors);
 
+               // booksRepository.InsertBook(3, "book7", 150, 333);
+
                 booksRepository.GetAll();
-               // Console.WriteLine(booksRepository.GetAll());
+                Console.WriteLine(booksRepository.GetAll());
+
+                //booksRepository.DeleteBook(1005);
+                //Console.WriteLine(booksRepository.GetAll());
 
                 //Console.WriteLine(booksRepository.GetBookById(1));
-                Console.WriteLine(booksRepository.GetBookByTitle("gra"));
+                // Console.WriteLine(booksRepository.GetBookByTitle("gra"));
+
+                //booksRepository.UpdateBook( 3 ,2, "Book3", 100, 333);
+                //Console.WriteLine(booksRepository.GetAll());
 
                 Console.WriteLine(booksRepository.GetBookCount());
 

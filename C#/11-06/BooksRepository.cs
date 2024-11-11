@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ConsoleApp1
 {
@@ -123,6 +124,98 @@ namespace ConsoleApp1
                     booksData += "\n";
                 }            
             return booksData;           
+        }
+
+        public int InsertBook(int authorId, string title, int price, int pages)
+        {
+            SqlCommand cmd = new SqlCommand("InsertBook", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@authorId",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = authorId
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@title",
+                SqlDbType = System.Data.SqlDbType.NVarChar,
+                Value = title
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@price",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = price
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@pages",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = pages
+            });
+
+            return cmd.ExecuteNonQuery();
+        }
+
+
+        public int DeleteBook(int id) 
+        {           
+            SqlCommand cmd = new SqlCommand("DeleteBook", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters
+              .Add(new SqlParameter("@Id", System.Data.SqlDbType.Int))
+              .Value = id;
+
+            return cmd.ExecuteNonQuery();
+        }
+
+        public int UpdateBook(int id ,int authorId, string title, int price, int pages)
+        {
+            SqlCommand cmd = new SqlCommand("UpdateBook", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@id",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = id
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@authorId",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = authorId
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@title",
+                SqlDbType = System.Data.SqlDbType.NVarChar,
+                Value = title
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@price",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = price
+            });
+
+            cmd.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@pages",
+                SqlDbType = System.Data.SqlDbType.Int,
+                Value = pages
+            });
+
+            return cmd.ExecuteNonQuery();
         }
 
 
