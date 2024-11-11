@@ -44,12 +44,9 @@ GO
 --    DECLARE @avgSale DECIMAL(7, 2);
     
 --    SELECT @avgSale =  AVG(SellPrice) 
---    FROM Products
-    
-    
+--    FROM Products  
 --    RETURN @avgPrice;
 --END;
-
 
 --ALTER FUNCTION getAvgSalesByDate ()
 --RETURNS DECIMAL(7,2)
@@ -62,6 +59,61 @@ GO
 --    );
 --END;
 
-SELECT SaleDate , dbo.getAvgSalesByDate ()
-FROM Sales
-GROUP BY SaleDate
+
+---------------------- 4  
+
+--CREATE FUNCTION getLastSoldProduct()
+--RETURNS @result TABLE (
+--    ProductID INT,
+--    ProductName VARCHAR(100),    
+--    SellPrice DECIMAL(7,2),
+--	SaleDate DATE
+--) AS 
+--BEGIN
+--    INSERT INTO @Result
+--        SELECT  P.ProductID, ProductName, SellPrice, SaleDate          
+--        FROM Products P
+--		JOIN SalersProducts SP ON SP.ProductID = P.ProductID
+--		JOIN Sales S ON S.SaleID = SP.SaleID
+--    WHERE SaleDate = (SELECT MIN(SaleDate)
+--					FROM Sales	)
+--	RETURN
+--END
+
+
+---------------------- 5  
+
+--CREATE FUNCTION getFirstSoldProduct()
+--RETURNS @result TABLE (
+--    ProductID INT,
+--    ProductName VARCHAR(100),    
+--    SellPrice DECIMAL(7,2),
+--	SaleDate DATE
+--) AS 
+--BEGIN
+--    INSERT INTO @Result
+--        SELECT  P.ProductID, ProductName, SellPrice, SaleDate          
+--        FROM Products P
+--		JOIN SalersProducts SP ON SP.ProductID = P.ProductID
+--		JOIN Sales S ON S.SaleID = SP.SaleID
+--    WHERE SaleDate = (SELECT MIN(SaleDate)
+--					FROM Sales	)
+--	RETURN
+--END
+    
+
+---------------------- 6  
+
+--CREATE PROCEDURE GetProductsByCategory (@Category varchar(50))
+--AS
+--BEGIN
+--    SELECT *
+--    FROM Products P
+--	JOIN Categories C ON C.CategoryID = P.CategoryID
+--    WHERE CategoryName = @Category;
+--END
+
+
+---------------------- 7  
+
+--	Clients don't have BirthDate  
