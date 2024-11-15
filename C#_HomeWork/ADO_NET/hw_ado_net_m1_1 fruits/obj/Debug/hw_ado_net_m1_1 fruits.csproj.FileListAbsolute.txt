@@ -1,0 +1,7 @@
+F:\TOP\С#\hw_ado_net_m1_1 fruits\obj\Debug\hw_ado_net_m1_1 fruits.csproj.AssemblyReference.cache
+F:\TOP\С#\hw_ado_net_m1_1 fruits\obj\Debug\hw_ado_net_m1_1 fruits.csproj.CoreCompileInputs.cache
+F:\TOP\С#\hw_ado_net_m1_1 fruits\bin\Debug\hw_ado_net_m1_1 fruits.exe.config
+F:\TOP\С#\hw_ado_net_m1_1 fruits\bin\Debug\hw_ado_net_m1_1 fruits.exe
+F:\TOP\С#\hw_ado_net_m1_1 fruits\bin\Debug\hw_ado_net_m1_1 fruits.pdb
+F:\TOP\С#\hw_ado_net_m1_1 fruits\obj\Debug\hw_ado_net_m1_1 fruits.exe
+F:\TOP\С#\hw_ado_net_m1_1 fruits\obj\Debug\hw_ado_net_m1_1 fruits.pdb
