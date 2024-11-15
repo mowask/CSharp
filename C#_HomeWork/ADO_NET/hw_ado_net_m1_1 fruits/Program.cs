@@ -28,25 +28,32 @@ namespace hw_ado_net_m1_1_fruits
 
             VeganBase vb = new VeganBase(_connection);
 
+
+                //  3
             vb.GetAllProducts();
+                Console.WriteLine();
+            vb.GetProductName();
+                 Console.WriteLine();
+            vb.GetColors();
+                 Console.WriteLine();
+            vb.GetMaxCalories();
+                Console.WriteLine();
+            vb.GetMinCalories();
+                Console.WriteLine();
+            vb.GetAvgCalories();
+                Console.WriteLine();
 
-                //string select = @"SELECT * FROM Products";
-                //SqlCommand cmd = new SqlCommand(select, _connection);
-                //SqlDataReader reader = cmd.ExecuteReader();
+                //  4
 
-                //for (int i = 0; i < reader.FieldCount; i++)
-                //{
-                //    Console.WriteLine(reader[i]);
-                //}
-                //while (reader.Read())
-                //{
-                //    Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
-                //}
-                //reader.Close();
+            vb.GetCountVegetables();
+                Console.WriteLine();
+
+            vb.GetCountFruits();
+                Console.WriteLine();
 
 
 
-
+                Console.ReadKey();
 
             }
             catch (Exception ex)
@@ -71,9 +78,8 @@ namespace hw_ado_net_m1_1_fruits
             _connection = connection;
         }
 
-        public string GetAllProducts() 
-        {
-            string prod = "";
+        public void GetAllProducts() 
+        {            
             string select = @"SELECT * FROM Products";
             SqlCommand cmd = new SqlCommand(select, _connection);
             SqlDataReader reader = cmd.ExecuteReader();
@@ -83,9 +89,79 @@ namespace hw_ado_net_m1_1_fruits
             {
                 Console.WriteLine(reader[0]+ "\t" + reader[1] + "\t" + reader[2] + "\t" + reader[3] + "\t" + reader[4]);
             }
-            reader = cmd.ExecuteReader();
-
-            return prod;
+            reader.Close();            
         }
+
+
+        public void GetProductName()
+        {            
+            string select = @"SELECT Name FROM Products";
+            SqlCommand cmd1 = new SqlCommand(select, _connection);
+            SqlDataReader reader = cmd1.ExecuteReader();
+
+            while (reader.Read())
+                Console.Write(reader["Name"] + " ");
+            reader.Close();
+        }
+
+        public void GetColors() 
+        {            
+            string select = @"SELECT Color FROM Products";
+            SqlCommand cmd2 = new SqlCommand(select, _connection);
+            SqlDataReader reader = cmd2.ExecuteReader();
+
+            while (reader.Read())
+                Console.Write(reader["Color"] + " ");
+            reader.Close();
+        }
+
+        public void GetMaxCalories() 
+        {            
+            string select = @"SELECT MAX(Сalories) FROM Products";
+            SqlCommand cmd3 = new SqlCommand(select, _connection);            
+
+            int maxCalories = (int)cmd3.ExecuteScalar();
+                Console.Write("maxCalories = " + maxCalories);                               
+        }
+
+        public void GetMinCalories() 
+        {            
+            string select = @"SELECT MIN(Сalories) FROM Products";
+            SqlCommand cmd3 = new SqlCommand(select, _connection);            
+
+            int minCalories = (int)cmd3.ExecuteScalar();
+                Console.Write("maxCalories = " + minCalories);                               
+        }
+
+         public void GetAvgCalories() 
+        {            
+            string select = @"SELECT AVG(Сalories) FROM Products";
+            SqlCommand cmd3 = new SqlCommand(select, _connection);            
+
+            int avgCalories = (int)cmd3.ExecuteScalar();
+                Console.Write("maxCalories = " + avgCalories);                               
+        }
+
+        //  4
+         public void GetCountVegetables() 
+        {            
+            string select = @"SELECT Count(*) FROM Products WHERE Type = 'vegetable'";
+            SqlCommand cmd3 = new SqlCommand(select, _connection);            
+
+            int count = (int)cmd3.ExecuteScalar();
+                Console.Write("vegetable = " + count);          
+        }
+
+        public void GetCountFruits() 
+        {            
+            string select = @"SELECT Count(*) FROM Products WHERE Type = 'fruit'";
+            SqlCommand cmd3 = new SqlCommand(select, _connection);            
+
+            int count = (int)cmd3.ExecuteScalar();
+                Console.Write("vegetable = " + count);          
+        }
+
+
+
     }
 }
