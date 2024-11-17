@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfCs_11_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCs_11_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="600">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Employees">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <Button x:Name="buttonLoadEmployees" Width="200" Margin="5">
+                            Load Empoyees
+                        </Button>
+                        <TextBox x:Name="textBoxFirtName" Width="200" Margin="5"/>
+                        <TextBox x:Name="textBoxLastName" Width="200" Margin="5"/>
+                        <Button x:Name="buttonAddEmployee" Width="200" Margin="5">
+                            Add Empoyee
+                        </Button>
+                    </StackPanel>
+                    <DataGrid x:Name="dataGridEmployees" Grid.Row="1" HorizontalAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Products">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <Button x:Name="buttonLoadProducts" Width="200" Margin="5">
+                            Load Products
+                        </Button>
+                        <StackPanel x:Name="stackPanelProducts"/>
+                        <Button x:Name="buttonAddProducts" Width="200" Margin="5">
+                            Add Products
+                        </Button>
+                    </StackPanel>
+                    <DataGrid x:Name="dataGridProducts" Grid.Row="1" HorizontalAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Sales">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <!--<Button x:Name="buttonLoadSales" Width="200" Margin="5">
+                            Load Sales
+                        </Button>-->
+                        <StackPanel x:Name="stackPanelSales"/>
+                        <Button x:Name="buttonAddSales" Width="200" Margin="5">
+                            Add Sales
+                        </Button>
+                    </StackPanel>
+                    <DataGrid x:Name="dataGridSales" AutoGenerateColumns="False" 
+                              Grid.Row="1" HorizontalAlignment="Center">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Id}" Header="Id"/>
+                            <DataGridTextColumn Binding="{Binding Product.ProductName}"
+                            Header="ProductName"/>
+                            <DataGridTextColumn Binding="{Binding Product.Price}" 
+                            Header="Unit Price"/>
+                            <DataGridTextColumn Binding="{Binding Employee}"
+                            Header="Employee"/>
+                            <DataGridTextColumn Binding="{Binding CustomerName}"
+                            Header="CustomerName"/>
+                            <DataGridTextColumn Binding="{Binding Quantity}"
+                            Header="Quantity"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>      
+            </TabItem>
+        </TabControl>
+    </Grid>
+    
+    
+</Window>
