@@ -1,0 +1,7 @@
+C:\Users\student\source\repos\11-20 LinqToSQL\obj\Debug\11-20 LinqToSQL.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\11-20 LinqToSQL\obj\Debug\11-20 LinqToSQL.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\11-20 LinqToSQL\bin\Debug\11-20 LinqToSQL.exe.config
+C:\Users\student\source\repos\11-20 LinqToSQL\bin\Debug\11-20 LinqToSQL.exe
+C:\Users\student\source\repos\11-20 LinqToSQL\bin\Debug\11-20 LinqToSQL.pdb
+C:\Users\student\source\repos\11-20 LinqToSQL\obj\Debug\11-20 LinqToSQL.exe
+C:\Users\student\source\repos\11-20 LinqToSQL\obj\Debug\11-20 LinqToSQL.pdb
