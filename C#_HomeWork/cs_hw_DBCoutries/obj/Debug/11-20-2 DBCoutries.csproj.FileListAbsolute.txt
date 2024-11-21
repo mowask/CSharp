@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\11-20-2 DBCoutries\bin\Debug\11-20-2 DBCoutries.exe.config
+C:\Users\student\source\repos\11-20-2 DBCoutries\bin\Debug\11-20-2 DBCoutries.exe
+C:\Users\student\source\repos\11-20-2 DBCoutries\bin\Debug\11-20-2 DBCoutries.pdb
+C:\Users\student\source\repos\11-20-2 DBCoutries\obj\Debug\11-20-2 DBCoutries.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\11-20-2 DBCoutries\obj\Debug\11-20-2 DBCoutries.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\11-20-2 DBCoutries\obj\Debug\11-20-2 DBCoutries.exe
+C:\Users\student\source\repos\11-20-2 DBCoutries\obj\Debug\11-20-2 DBCoutries.pdb
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\bin\Debug\11-20-2 DBCoutries.exe.config
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\bin\Debug\11-20-2 DBCoutries.exe
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\bin\Debug\11-20-2 DBCoutries.pdb
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\obj\Debug\11-20-2 DBCoutries.csproj.AssemblyReference.cache
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\obj\Debug\11-20-2 DBCoutries.csproj.CoreCompileInputs.cache
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\obj\Debug\11-20-2 DBCoutries.exe
+f:\TOP\С#\C#_HomeWork\cs_hw_DBCoutries\obj\Debug\11-20-2 DBCoutries.pdb
