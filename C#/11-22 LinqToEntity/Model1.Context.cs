@@ -18,6 +18,7 @@ namespace _11_22_LinqToEntity
         public LibraryEntities()
             : base("name=LibraryEntities")
         {
+            Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
