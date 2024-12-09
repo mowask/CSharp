@@ -8,6 +8,8 @@
         Title="MainWindow" Height="550" Width="600">
     <Grid>
         <TabControl>
+            
+            <!--employees-->
             <TabItem Header="Employees">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -15,19 +17,23 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <StackPanel>
-                        <Button x:Name="buttonLoadEmployees" Width="200" Margin="5">
+                        <!--<Button x:Name="buttonLoadEmployees" Width="200" Margin="5">
                             Load Empoyees
-                        </Button>
+                        </Button>-->
                         <TextBox x:Name="textBoxFirtName" Width="200" Margin="5"/>
                         <TextBox x:Name="textBoxLastName" Width="200" Margin="5"/>
                         <Button x:Name="buttonAddEmployee" Width="200" Margin="5">
                             Add Empoyee
+                        </Button>
+                        <Button x:Name="buttonDeleteEmployee" Width="200" Margin="5">
+                            Delete Empoyee
                         </Button>
                     </StackPanel>
                     <DataGrid x:Name="dataGridEmployees" Grid.Row="1" HorizontalAlignment="Center"/>
                 </Grid>
             </TabItem>
             
+            <!--products-->
             <TabItem Header="Products">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -35,18 +41,22 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <StackPanel>
-                        <Button x:Name="buttonLoadProducts" Width="200" Margin="5">
+                        <!--<Button x:Name="buttonLoadProducts" Width="200" Margin="5">
                             Load Products
-                        </Button>
+                        </Button>-->
                         <StackPanel x:Name="stackPanelProducts"/>
                         <Button x:Name="buttonAddProducts" Width="200" Margin="5">
                             Add Products
+                        </Button>
+                        <Button x:Name="buttonDeleteProducts" Width="200" Margin="5">
+                            Delete Products
                         </Button>
                     </StackPanel>
                     <DataGrid x:Name="dataGridProducts" Grid.Row="1" HorizontalAlignment="Center"/>
                 </Grid>
             </TabItem>
             
+            <!--sales-->
             <TabItem Header="Sales">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -60,6 +70,9 @@
                         <StackPanel x:Name="stackPanelSales"/>
                         <Button x:Name="buttonAddSales" Width="200" Margin="5">
                             Add Sales
+                        </Button>
+                        <Button x:Name="buttonDeleteSales" Width="200" Margin="5">
+                            Delete Sales
                         </Button>
                     </StackPanel>
                     <DataGrid x:Name="dataGridSales" AutoGenerateColumns="False" 

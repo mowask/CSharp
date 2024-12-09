@@ -75,19 +75,38 @@ namespace WpfCs_11_11
             this.Closing += MainWindow_Closing;
 
             buttonAddEmployee.Click += ButtonAddEmployee_Click;
-            buttonLoadEmployees.Click += ButtonLoadEmployees_Click;
+            buttonDeleteEmployee.Click += ButtonDeleteEmployee_Click;
+           // buttonLoadEmployees.Click += ButtonLoadEmployees_Click;
+
+
 
             SetupProductInput();
 
             buttonAddProducts.Click += ButtonAddProducts_Click;
-            buttonLoadProducts.Click += ButtonLoadProducts_Click;
+            buttonDeleteProducts.Click += ButtonDeleteProducts_Click; 
+           // buttonLoadProducts.Click += ButtonLoadProducts_Click;
 
             SetupSaleInput();
 
             buttonAddSales.Click += ButtonAddSales_Click;
+            buttonDeleteSales.Click += ButtonDeleteSales_Click;
 
         }
 
+        private void ButtonDeleteSales_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ButtonDeleteProducts_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ButtonDeleteEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private void ButtonAddSales_Click(object sender, RoutedEventArgs e)
         {
@@ -162,6 +181,7 @@ namespace WpfCs_11_11
             }
         }
 
+
         private void ButtonLoadEmployees_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -175,6 +195,7 @@ namespace WpfCs_11_11
                 MessageBox.Show(ex.ToString());
             }
         }
+
 
         private void ButtonAddEmployee_Click(object sender, RoutedEventArgs e)
         {
@@ -194,6 +215,7 @@ namespace WpfCs_11_11
                 MessageBox.Show(ex.ToString());         
             }
         }
+
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -296,6 +318,7 @@ namespace WpfCs_11_11
             stackPanelSales.Children.Add(comboBoxProducts);
             stackPanelSales.Children.Add(comboBoxEmployees);            
         }
+
 
     }
 }
