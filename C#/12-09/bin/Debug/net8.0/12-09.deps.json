@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "12-09/1.0.0": {
+        "dependencies": {
+          "Fastenshtein": "1.0.10"
+        },
+        "runtime": {
+          "12-09.dll": {}
+        }
+      },
+      "Fastenshtein/1.0.10": {
+        "runtime": {
+          "lib/net8.0/Fastenshtein.dll": {
+            "assemblyVersion": "1.0.10.0",
+            "fileVersion": "1.0.10.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "12-09/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fastenshtein/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fZ5DKypgdTkwfchV4fZ5OFFGYu49B8YbUMr6hN6Azl7IziIsyKARqdU3EZt/oQJyV71eQxpY9jL2J1tXb2gvlQ==",
+      "path": "fastenshtein/1.0.10",
+      "hashPath": "fastenshtein.1.0.10.nupkg.sha512"
+    }
+  }
+}

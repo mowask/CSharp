@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Fastenshtein/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Fastenshtein.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Fastenshtein.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fastenshtein/1.0.10": {
+      "sha512": "fZ5DKypgdTkwfchV4fZ5OFFGYu49B8YbUMr6hN6Azl7IziIsyKARqdU3EZt/oQJyV71eQxpY9jL2J1tXb2gvlQ==",
+      "type": "package",
+      "path": "fastenshtein/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "fastenshtein.1.0.10.nupkg.sha512",
+        "fastenshtein.nuspec",
+        "lib/net452/Fastenshtein.dll",
+        "lib/net452/Fastenshtein.xml",
+        "lib/net8.0/Fastenshtein.dll",
+        "lib/net8.0/Fastenshtein.xml",
+        "lib/netstandard1.0/Fastenshtein.dll",
+        "lib/netstandard1.0/Fastenshtein.xml",
+        "lib/netstandard2.0/Fastenshtein.dll",
+        "lib/netstandard2.0/Fastenshtein.xml",
+        "nuget-readme.md"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Fastenshtein >= 1.0.10"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\student\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\CSharp\\C#\\12-09\\12-09.csproj",
+      "projectName": "12-09",
+      "projectPath": "C:\\CSharp\\C#\\12-09\\12-09.csproj",
+      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+      "outputPath": "C:\\CSharp\\C#\\12-09\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Fastenshtein": {
+            "target": "Package",
+            "version": "[1.0.10, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
