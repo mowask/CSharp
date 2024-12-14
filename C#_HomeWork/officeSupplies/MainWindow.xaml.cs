@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.SqlClient;
@@ -95,17 +95,74 @@ namespace WpfCs_11_11
 
         private void ButtonDeleteSales_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (dataGridSales.SelectedItems != null)
+                {
+                    for (int i = 0; i < dataGridSales.SelectedItems.Count; i++)
+                    {
+                        DataRow dataRow = (dataGridSales.SelectedItems[i] as DataRowView).Row;
+                        if (dataRow != null)
+                        {
+                            dataRow.Delete();
+                        }
+                    }
+                }
+                Sales = _salesRepository.getAll();
+                dataGridSales.ItemsSource = Sales;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void ButtonDeleteProducts_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (dataGridProducts.SelectedItems != null)
+                {
+                    for (int i = 0; i < dataGridProducts.SelectedItems.Count; i++)
+                    {
+                        DataRow dataRow = (dataGridProducts.SelectedItems[i] as DataRowView).Row;
+                        if (dataRow != null)
+                        {
+                            dataRow.Delete();
+                        }
+                    }
+                }
+                ProductsList = _productsRepository.getAll();
+                dataGridProducts.ItemsSource = ProductsList;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void ButtonDeleteEmployee_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (dataGridEmployees.SelectedItems != null)
+                {
+                    for (int i = 0; i < dataGridEmployees.SelectedItems.Count; i++)
+                    {
+                        DataRow dataRow = (dataGridEmployees.SelectedItems[i] as DataRowView).Row;
+                        if (dataRow != null)
+                        {
+                            dataRow.Delete();
+                        }
+                    }
+                }
+                Employees = _employeesRepository.getAll();
+                dataGridEmployees.ItemsSource = Employees;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void ButtonAddSales_Click(object sender, RoutedEventArgs e)

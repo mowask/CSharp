@@ -11,7 +11,7 @@
             
             <!--employees-->
             <TabItem Header="Employees">
-                <Grid>
+                <Grid x:Name="gridEmployees">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
@@ -35,7 +35,7 @@
             
             <!--products-->
             <TabItem Header="Products">
-                <Grid>
+                <Grid x:Name="gridProducts">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
@@ -58,7 +58,7 @@
             
             <!--sales-->
             <TabItem Header="Sales">
-                <Grid>
+                <Grid x:Name="gridSales">                   
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
